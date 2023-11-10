@@ -5,3 +5,12 @@ class centreHtml extends HTMLElement{
 }
 
 customElements.define("x-center, centerHtml");
+
+
+class blueHtml extends HTMLElement{
+ connectedCallback(){
+    This.innerHtml=`<div style="color:blue">${this.innerHtml}</div`;
+ }
+}
+
+customElements.define("x-blue, blue.html");
